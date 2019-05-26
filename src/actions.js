@@ -8,49 +8,39 @@ export const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 
 
 function addComment(text) {
-    return
-    {
+    return {
         type: ADD_COMMENT,
-            id: uuid.v4(),
-                text: text
+        id: uuid.v4(),
+        text: text
     }
 }
 
 
 function removeComment(id) {
-    return
-    {
+    return {
         type: REMOVE_COMMENT,
-            id
+        id
     }
 }
 function editComment(id, text) {
-    return
-    {
+    return {
         type: EDIT_COMMENT,
-            id,
-            text
+        id,
+        text
     }
 }
 function thumbDownContent(id) {
-    return
-    {
+    return {
         type: THUMB_DOWN_COMMENT,
-            id
+        id
     }
 }
 function thumbUpContent(id) {
-    return
-    {
+    return {
         type: THUMB_UP_COMMENT,
-            id
+        id
     }
 }
 
-bindAddComment = text => dispatch(addComment(text));
-bindRemoveComment = text => dispatch(removeComment(id));
-bindEditComment = (text, id) => dispatch(editComment(id, text));
-bindThumbUpContent = id => dispatch(thumbUpContent(id));
-bindThumbDownContent = id => dispatch(thumbDownContent(id));
 
 export { addComment, removeComment, editComment, thumbDownContent, thumbUpContent };
