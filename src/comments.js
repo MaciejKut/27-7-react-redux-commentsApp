@@ -1,5 +1,7 @@
 import { ADD_COMMENT, REMOVE_COMMENT, EDIT_COMMENT, THUMB_UP_COMMENT, THUMB_DOWN_COMMENT } from './actions';
 
+
+
 function comments(state = [], action) {
     switch (action.type) {
         case ADD_COMMENT:
@@ -56,10 +58,5 @@ function comments(state = [], action) {
     }
 }
 
-
-const initialState = {
-    comments: [],
-    users: []
-}
 
 export default comments;
