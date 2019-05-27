@@ -14,7 +14,7 @@ function comments(state = [], action) {
                 , ...state]
 
         case REMOVE_COMMENT:
-            console.log(action.id);
+            // console.log(action.id);
             return [
                 state.filter(comment => comment.id !== action.id)
 
