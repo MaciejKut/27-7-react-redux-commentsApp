@@ -30,13 +30,13 @@ function editComment(id, text) {
 function thumbDownContent(id) {
     return {
         type: THUMB_DOWN_COMMENT,
-        id
+        id: id
     }
 }
 function thumbUpContent(id) {
     return {
         type: THUMB_UP_COMMENT,
-        id
+        id: id
     }
 }
 
