@@ -1,5 +1,5 @@
 import React from 'react';
-import Comment from './CommentsContainer';
+import Comment from './CommentContainer';
 
 
 console.log(Comment);
