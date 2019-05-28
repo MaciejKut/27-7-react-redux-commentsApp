@@ -15,10 +15,9 @@ function comments(state = [], action) {
 
         case REMOVE_COMMENT:
             // console.log(action.id);
-            return [
-                state.filter(comment => comment.id !== action.id)
+            return state.filter(comment => comment.id !== action.id)
 
-            ]
+
         case EDIT_COMMENT:
             return state.map(comment => {
                 if (comment.id === action.id) {
